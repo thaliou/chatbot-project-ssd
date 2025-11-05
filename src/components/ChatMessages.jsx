@@ -23,6 +23,10 @@ function useAutoScroll(dependencies) {
 
 export function ChatMessages({chatMessages}) {
   const messageRef = useAutoScroll(chatMessages);
+
+
+
+
   return(
     <div className="chat-message-container"
           ref={messageRef}
